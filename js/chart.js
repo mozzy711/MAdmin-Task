@@ -5,7 +5,7 @@ window.onload = function () {
     animationEnabled: true,
     exportEnabled: true,
     title: {
-      text: "Top 10 Most Viewed YouTube Videos"
+      text: "Recent Sales per Month"
     },
     axisX: {
       margin: 10,
@@ -13,27 +13,22 @@ window.onload = function () {
       tickPlacement: "inside"
     },
     axisY2: {
-      title: "Views (in billion)",
+      title: "Sales (in thousands Php)",
       titleFontSize: 14,
       includeZero: true,
-      suffix: "bn"
+      suffix: "k Php"
     },
     data: [{
-      type: "bar",
+      type: "line",
       axisYType: "secondary",
-      yValueFormatString: "#,###.##bn",
+      yValueFormatString: "#,###.##k Php",
       indexLabel: "{y}",
       dataPoints: [
-        { label: "Sugar - Maroon 5", y: 3.25 },
-        { label: "Sorry - Justin Bieber", y: 3.32 },
-        { label: "Johny Johny Yes Papa", y: 3.63 },
-        { label: "Gangnam Style", y: 3.72 },
-        { label: "Uptown Funk", y: 3.90 },
-        { label: "Masha and the Bear", y: 4.32 },
-        { label: "See You Again", y: 4.66 },
-        { label: "Shape of You", y: 4.91 },
-        { label: "Baby Shark Dance", y: 6.13 },
-        { label: "Despacito", y: 6.88 }
+        { label: "January", y: 105 },
+        { label: "February", y: 205 },
+        { label: "March", y: 350 },
+        { label: "April", y: 450 },
+  
       ]
     }]
   });
@@ -44,3 +39,8 @@ window.onload = function () {
   
     
   }
+
+
+
+
+  
